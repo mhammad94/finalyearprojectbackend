@@ -1,0 +1,15 @@
+[
+  {
+      "model":"users_app.customuser",
+      "pk": "6271de71-0d9b-41ab-9624-73da936233fe",
+      "fields": {
+        "email": "admin@adminmail.com",
+        "password": "pbkdf2_sha256$720000$fCDVXz5lGpMSi7cZO0FyFS$yBJrkFQUFVjUKwZ0OSQKM1VCERKOHFKHGzfvxqW1vMw=",
+        "first_name":"Admin",
+        "last_name":"Admin" ,
+        "user_type": "0",
+        "username": "admin@adminmail.com",
+        "is_approved": "True"
+      }
+  }
+]

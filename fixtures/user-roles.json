@@ -1,0 +1,38 @@
+[
+  {
+    "model":"users_app.userroleroutes",
+    "pk": "d918c89f-2365-406b-b0a9-469cfdff942f",
+    "fields": {
+        "route_title": "Users",
+        "route": "dashboard/admin",
+        "user_type": "0"
+    }
+  },
+     {
+    "model":"users_app.userroleroutes",
+    "pk": "a0d49bf7-1447-4230-9433-1dc826849b13",
+    "fields": {
+        "route_title": "Forum",
+        "route": "dashboard/forum",
+        "user_type": "1"
+    }
+  },
+     {
+    "model":"users_app.userroleroutes",
+    "pk": "edf502ef-9fc5-474f-88d6-f04132e6c495",
+    "fields": {
+        "route_title": "Forum",
+        "route": "dashboard/forum",
+        "user_type": "2"
+    }
+  },
+       {
+    "model":"users_app.userroleroutes",
+    "pk": "99c1287e-0560-40b7-9cbe-e0ed328dbe41",
+    "fields": {
+        "route_title": "Ban User",
+        "route": "dashboard/banuser",
+        "user_type": "1"
+    }
+  }
+]
