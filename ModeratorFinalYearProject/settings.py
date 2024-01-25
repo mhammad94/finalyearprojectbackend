@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'ModeratorFinalYearProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'moderator-database',
+        'NAME': 'finalyear-project-forum',
         'USER': 'postgres',
         'PASSWORD': 'hammad123',
         'HOST': 'localhost',

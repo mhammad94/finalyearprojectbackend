@@ -18,8 +18,8 @@ class UnauthorizedMiddleware:
         token = request.headers.get("Authorization", "")
         host = request.META.get("HTTP_HOST", "")
 
-        # if host == "localhost:8000":
-        #     return self.get_response(request)
+        if host == "localhost:8000":
+            return self.get_response(request)
 
         if token.startswith("JWT "):
             token = token.split("JWT ")[1]
@@ -33,7 +33,7 @@ class UnauthorizedMiddleware:
                 json_data = json.loads(request.body.decode("utf-8"))
                 operation_type = json_data.get("operationName")
 
-                if operation_type == "Logout" or operation_type == "Login":
+                if operation_type == "Logout" or operation_type == "Login" or operation_type == "SignupNormalUser":
                     return self.get_response(request)
             except json.JSONDecodeError:
                 pass

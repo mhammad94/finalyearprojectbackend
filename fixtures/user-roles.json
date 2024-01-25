@@ -34,5 +34,15 @@
         "route": "dashboard/banuser",
         "user_type": "1"
     }
+  },
+
+       {
+    "model":"users_app.userroleroutes",
+    "pk": "1c162a47-fd4c-42fe-bb49-771f33696a95",
+    "fields": {
+        "route_title": "Filter Keywords",
+        "route": "dashboard/filterkeywords",
+        "user_type": "0"
+    }
   }
 ]

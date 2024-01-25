@@ -22,8 +22,8 @@ class CustomUser(AbstractUser):
 
     user_type = models.SmallIntegerField(choices=USER_TYPE_CHOICES, default=NORMALUSER)
     is_user_banned = models.BooleanField(default=False)
-    ban_start_date = models.DateTimeField(auto_now_add=True)
-    ban_end_date = models.DateTimeField(auto_now_add=True)
+    ban_start_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
+    ban_end_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
 
 

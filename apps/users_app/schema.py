@@ -48,6 +48,7 @@ class UserQuery(graphene.ObjectType):
     def resolve_get_users_for_approval(self, info, **kwargs):
         try:
             users = CustomUser.objects.filter(is_staff=False, user_type__range=(1,2))
+            users = sorted(users, key=lambda x: x.date_joined, reverse=True)
             data = {
                 "ok":True,
                 "errors":"",
@@ -66,6 +67,7 @@ class UserQuery(graphene.ObjectType):
     def resolve_get_normal_users(self, info, **kwargs):
         try:
             users = CustomUser.objects.filter(is_staff=False, user_type=2, is_approved=True)
+            users = sorted(users, key=lambda x: x.date_joined, reverse=True)
             data = {
                 "ok": True,
                 "errors": "",

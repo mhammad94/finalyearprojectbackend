@@ -20,3 +20,9 @@ class Comment(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
 
+class FilterKeywords(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    key_word = models.CharField(max_length=250, null=False, blank=False, default="")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+
